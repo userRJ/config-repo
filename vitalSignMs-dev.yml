@@ -1,0 +1,6 @@
+spring:
+    datasource:
+        password: ${dbpassword}
+        username: ${username}
+server:
+    port: 8082
