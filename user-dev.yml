@@ -8,7 +8,5 @@ spring:
             time-to-live: 200000
             use-key-prefix: false
         type: redis
-    redis:
-        host: host.docker.internal
 server:
     port: 8080
