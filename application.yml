@@ -1,5 +1,35 @@
+logging:
+    level:
+        org:
+            springframework:
+                security: DEBUG
+server:
+    servlet:
+        context-path: /msapi
+    tomcat:
+        relaxed-query-chars: '|,{,},[,]'
 spring:
+    cloud:
+        config:
+            uri: http://localhost:8888
+        consul:
+            discovery:
+                health-check-path: /msapi/actuator/health
     datasource:
-        password: ${dbpassword}
-        url: jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
-        username: ${username}
+        url: jdbc:mysql://host.docker.internal:3306/test?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+management:
+    endpoint:
+        metrics:
+            enabled: true
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+    security:
+        enabled: false
