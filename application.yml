@@ -10,8 +10,6 @@ server:
         relaxed-query-chars: '|,{,},[,]'
 spring:
     cloud:
-        config:
-            uri: http://host.docker.internal:8888
         consul:
             discovery:
                 health-check-path: /msapi/actuator/health
