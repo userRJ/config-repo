@@ -4,3 +4,7 @@ spring:
         username: ${username}
 server:
     port: 8081
+patient:
+  rest:
+    username: testadmin04
+    password: testadmin04#
