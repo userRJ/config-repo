@@ -1,6 +1,6 @@
 spring:
     datasource:
-        password: ${dbpassword}
-        username: ${username}
+        password: mysql2010
+        username: root
 server:
     port: 8081
