@@ -14,7 +14,7 @@ spring:
             discovery:
                 health-check-path: /msapi/actuator/health
     datasource:
-        url: jdbc:mysql://localhost:3306/test?useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+        url: jdbc:mysql://172.17.0.2:3306/test?useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=UTC&useLegacyDatetimeCode=false
     jpa:
         hibernate:
             ddl-auto: update
