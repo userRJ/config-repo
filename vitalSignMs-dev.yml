@@ -6,5 +6,5 @@ server:
     port: 8082
 vitalsign:
   rest:
-    username: testadmin
-    password: testadmin01#
+    username: testadmin04
+    password: testadmin04#
