@@ -1,6 +1,6 @@
 spring:
     datasource:
-        password: ${dbpassword}
+        password: mysql2010
         username: root
     cache:
         redis:
