@@ -9,7 +9,7 @@ spring:
             use-key-prefix: false
         type: redis
     redis:
-        host: 172.18.0.4
+        host: redis
         port: 6379
 server:
     port: 8080
