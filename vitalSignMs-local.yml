@@ -10,7 +10,7 @@ logging:
 server:
     servlet:
         context-path: /msapi
-    port: 8087
+    port: 8086
     tomcat:
         relaxed-query-chars: '|,{,},[,]'
 spring:
